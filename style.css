@@ -118,6 +118,13 @@ p.gifLabel {
     border-radius: 100%;
     margin-top: 10%;
     margin-left: 15%;
+    overflow: hidden;
+}
+#profilePic > img{
+    transition: transform 5s;
+}
+#profilePic > img:hover{
+    transform: scale(1.15);
 }
 .mainLinks{
     display: flex;
@@ -164,8 +171,27 @@ p.gifLabel {
     background: url('https://www.htxt.co.za/wp-content/uploads/2019/08/siri-logo.jpg') no-repeat center;
     background-size: cover;
 }
-fieldset {
+.section3Start{
     padding: 120px 30px; 
     font-size: 25px; 
     font-family: 'Lexend Deca', sans-serif;
+}
+
+label{
+    font-size: 25px; 
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+
+}
+fieldset{
+    display: flex;
+    flex-flow: column;
+    
+}
+input{
+    margin: 0 auto;
+}
+ul >label:last-child {
+padding-bottom: 40px !important;
+
 }
