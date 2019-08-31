@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+.mainContent {
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+   
+}
+
+#title{
+    margin-top: 10% !important;
+    font-size: 5.5rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.label {
+    padding: 15px 0;
+}
+.container {
+position: relative; 
+display: flex;
+flex-flow: row;
+width: 100%;
+
+}
+.section1 ul {
+    padding-left: 0px;
+}
+.photoDiv {
+    position: relative;
+    width: 90%;
+    margin:  auto;
+}
+
+.contentArea {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    
+}
+.section2{
+    margin: 0 auto ;
+    text-align: center;
+    margin-left: 25%;
+    background: url('16649111_10107571614405850_7569088690274007022_n.jpg') no-repeat center;
+    background-size: cover;
+    background-color: darkgrey;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    height: 100vh;
+    width: 100%; 
+}
+.section3{
+    margin: 0 auto ;
+    text-align: center;
+    margin-left: 25%;
+    background: url('10534597_10152696860620972_7920241286957492075_n.jpg') no-repeat center;
+    background-size: cover;
+    background-color: darkgrey;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    height: 100vh;
+    width: 100%; 
+}
+.section1{
+    margin: 0 auto ;
+    margin-left: 25%;
+    text-align: center;
+    background: url('14882264_10106991517649400_8387405017800295807_o.jpg') no-repeat center;
+    background-size: cover;
+    background-color: darkgrey;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    /* height: 100vh; */
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+img {
+    width: 175px;
+}
+#about{
+    line-height: 1.5rem;
+}
+p,li{
+    padding-top: 30px; 
+    background-color: transparent;
+    line-height: 1.5rem;
+    padding: 0 20px;
+    color: white;
+}
+.sidebar {
+    background-color: red;
+    position:fixed;
+    display: flex;
+    flex-flow: column;
+    width: 20%;
+    height: 1000px;
+    
+
+}
+p.gifLabel {
+    padding-top: 20%;
+}
+#profilePic {
+    width: 70%;
+    border-radius: 100%;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+.mainLinks{
+    display: flex;
+    flex-flow: column;
+    font-family: 'Poiret One', cursive;
+}
+.mainLinks > a{
+    display: block;
+    padding-top: 10px;
+    line-height: 1.5em;
+    color: white;
+}
+.mainLinks > a:hover {
+    color: black;
+    text-decoration: none;
+}
+.projectArea{
+    width: 100%;
+    display: flex;
+    flex-flow:wrap;
+
+}
+.project1 {
+    width: 50%;
+    background: url('https://media1.giphy.com/media/pVe8bu4l12iT6/source.gif') no-repeat center;
+    height: 200px;
+    background-size: cover;
+}
+.project2{
+    width: 50%;
+    height: 200px;
+    background: url('https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_2500,h_1071,f_auto/https://cam.scentregroup.io/m/063f41855b715db9') no-repeat center;
+    background-size: cover;
+}
+.project3 {
+    width: 50%;
+    background: url('http://bestanimations.com/Sports/Basketball/amazing-basketball-dunk-play-animated-gif-3.gif') no-repeat center;
+    height: 200px;
+    background-size: cover;
+}
+.project4{
+    width: 50%;
+    height: 200px;
+    background: url('https://www.htxt.co.za/wp-content/uploads/2019/08/siri-logo.jpg') no-repeat center;
+    background-size: cover;
+}
+fieldset {
+    padding: 120px 30px; 
+    font-size: 25px; 
+    font-family: 'Lexend Deca', sans-serif;
+}
