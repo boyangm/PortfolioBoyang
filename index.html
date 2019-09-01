@@ -10,53 +10,52 @@
     <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Poiret+One&display=swap" rel="stylesheet">    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
 </head>
 <body>
     <div class="Container">
-         
+        
         <div class= "contentArea">
             <div class= "sidebar">
-            <div id = "profilePic">
-                <img src="19554296_10108232155421360_467838809925352881_n (1).jpg" id="" alt="">
-
+                <div id = "profilePic">
+                    <img src="19554296_10108232155421360_467838809925352881_n (1).jpg" id="" alt="">
+                    
                 </div>
-
-             <ul class= "mainLinks">
-                 <a href="#">Code Snippets</a>
-                 <a href="#">Resume</a>
-                 <a href="#">Projects</a>
-                 <a href="#">Art</a>
-             </ul>
+                
+                <ul class= "mainLinks">
+                    <a href="#">Code Snippets</a>
+                    <a href="#">Resume</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Art</a>
+                </ul>
             </div>
-        
+            
             <div class ="mainContent">
                 <div class="section1">
-                        <h1 id="title">Boyang Matsapola</h1>
-                        <br>
-                        <hr>
-                        <h2 id="subHeader" >About Me:</h1>
-                    <h3 class="about h3">
-                    Full Stack Web Developer with a passion for UI, Front-end work, and Component design.
-                    </h3>
-                    <p class ="about ">Ive always loved to make things. My life’s journey  has lead me around the world on different stages and into different professions. I’ve been a Linguist, a Musician, a Train Attendant, and an Educator.  In my life, what I find that connects all these things together is a love of people, a love of  building things. and an insatiable appetite for creative problem solving. These are the skills i hope to bring to a fast paced growing work environment. </p>
-
-                    <p style="font-size: 20px; padding-top: 60px; text-decoration: underline;">Skills include</p>
-                    <ul>
-                        <li class="label">Javascript</li>
+                    <h1 id="title">Boyang Matsapola</h1>
+                    <br>
+                    <hr>
+                    <h2 id="subHeader" >About Me:</h1>
+                        <h3 class="about h3">
+                            Full Stack Web Developer with a passion for UI, Front-end work, and Component design.
+                        </h3>
+                        <p class ="about ">Ive always loved to make things. My life’s journey  has lead me around the world on different stages and into different professions. I’ve been a Linguist, a Musician, a Train Attendant, and an Educator.  In my life, what I find that connects all these things together is a love of people, a love of  building things. and an insatiable appetite for creative problem solving. These are the skills i hope to bring to a fast paced growing work environment. </p>
+                        
+                        <h3  id ="hit" class = "h3" style="font-size: 20px; padding-top: 60px; text-decoration: underline;">Skills include</h3>
+                        <ul class= "toggle-content">
+                            <li class="label">Javascript</li>
                             
-                        <img src="https://static.javatpoint.com/images/javascript/javascript_logo.png" alt="javascriptlogo">
-                        <li class="label">Node</li>
+                            <img  src="https://static.javatpoint.com/images/javascript/javascript_logo.png" alt="javascriptlogo">
+                            <li class="label">Node</li>
                             <img src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/256/full/nodejslogo.png" alt="nodejslogo">
-                        <li class="label">Express</li>
+                            <li class="label">Express</li>
                             <img src="https://expressjs.com/images/express-facebook-share.png" alt="Express">
-                        <li class="label" >SQL</li>
+                            <li class="label" >SQL</li>
                             <img style="padding-bottom: 60px;" src="https://xipetechnology.com/Content/logos/sql.png" alt="SQL">
-
-                    </ul>
-                </div>
-                <div class="section2">
-                        <p style="padding: 120px 30px; font-size: 25px; font-family: 'Lexend Deca', sans-serif;"> WHILE YOU'RE TAKE A LOOK AROUND AT MY DIFFERENT PROJECTS.</p>
+                            
+                        </ul>
+                    </div>
+                    <div class="section2">
+                        <h3 id ="hit2" class= "h3 " style="padding: 120px 30px; font-size: 25px; font-family: 'Lexend Deca', sans-serif;"> WHILE YOU'RE TAKE A LOOK AROUND AT MY DIFFERENT PROJECTS.</h3>
                         <div class= "projectArea">
                             <div class ="project1">
                                 <p class="gifLabel">Try My GIF Maker</p>
@@ -71,25 +70,26 @@
                                 <p class="gifLabel">Play my Trivia Game made with a Trivia API</p>
                             </div>
                         </div>
-
+                        
                     </div>
                     <div class="section3">
-                        <p class= "section3Start">DOWNLOAD MY <a>RESUME</a> HERE.</p>
+                        <p class= "section3Start marker">DOWNLOAD MY <a id="resume">RESUME</a> HERE.</p>
                         <form action="" method="post"></form>
                         <fieldset>
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" placeholder="Your Name Here" style="width: 400px; margin: auto;">
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" placeholder="Your Email Here" style="width: 400px; margin: auto;">
-                        <label for="name">MESSAGE:</label>
-                        <textarea name="inquiry"  style="width: 400px; margin: auto;"></textarea>
-                        <input type="submit" style="width: 200px; margin: auto; margin-top: 20px;">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" placeholder="Your Name Here" style="width: 400px; margin: auto;">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" placeholder="Your Email Here" style="width: 400px; margin: auto;">
+                            <label for="name">MESSAGE:</label>
+                            <textarea name="inquiry"  style="width: 400px; margin: auto;"></textarea>
+                            <input type="submit" style="width: 200px; margin: auto; margin-top: 20px;">
                         </fieldset>
-                       
+                        
+                    </div>
+                    
                 </div>
-
             </div>
-       </div>
-    </div>
-</body>
-</html>
+        </div>
+        <script src="app.js"></script>
+    </body>
+    </html>

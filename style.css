@@ -17,14 +17,21 @@ body {
 #title{
     margin-top: 10% !important;
     font-size: 5.5rem;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     margin: 0;
     padding: 0;
     color: white;
 }
+
 #subHeader{
     color: white;
     padding-bottom: 20px;
+    background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .label {
     padding: 15px 0;
@@ -119,6 +126,7 @@ p,li{
 }
 .h3 {
     padding-top: 20px;
+    color: white;
 }
 p.gifLabel {
     padding-top: 20%;
@@ -201,8 +209,36 @@ fieldset{
 }
 input{
     margin: 0 auto;
+    border-radius: 10px;
+}
+textarea{
+    border-radius: 5px;
 }
 ul >label:last-child {
 padding-bottom: 40px !important;
 
+}
+#resume {
+    position: relative;
+    animation: movie 2s ease-in infinite;
+}
+@keyframes movie {
+    0% {top: 5px;}
+    50% {top: 0;}
+    100% {top: -5px;}
+}
+.toggle-content {
+    display: none;
+    height: 0;
+      opacity: 0;
+    overflow: hidden;
+    transform: translateX(-5%);
+    transition: height 350ms ease-in-out, opacity 750ms ease-in-out,transform 750ms linear;
+}
+
+.toggle-content.is-visible {
+	display: block;
+	height: auto;
+      opacity: 1;
+      transform: translateX(0%);
 }
