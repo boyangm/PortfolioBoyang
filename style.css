@@ -22,6 +22,10 @@ body {
     padding: 0;
     color: white;
 }
+#subHeader{
+    color: white;
+    padding-bottom: 20px;
+}
 .label {
     padding: 15px 0;
 }
@@ -64,19 +68,20 @@ width: 100%;
     margin: 0 auto ;
     text-align: center;
     margin-left: 25%;
-    background: url('10534597_10152696860620972_7920241286957492075_n.jpg') no-repeat center;
+    background: url('14882264_10106991517649400_8387405017800295807_o.jpg') no-repeat center;
     background-size: cover;
     background-color: darkgrey;
     background-attachment: fixed;
     background-blend-mode: multiply;
     height: 100vh;
     width: 100%; 
+    
 }
 .section1{
     margin: 0 auto ;
     margin-left: 25%;
     text-align: center;
-    background: url('14882264_10106991517649400_8387405017800295807_o.jpg') no-repeat center;
+    background: url('10534597_10152696860620972_7920241286957492075_n.jpg') no-repeat center;
     background-size: cover;
     background-color: darkgrey;
     background-attachment: fixed;
@@ -90,8 +95,10 @@ li{
 img {
     width: 175px;
 }
-#about{
+.about{
     line-height: 1.5rem;
+    color: white;
+    padding-bottom: 20px;
 }
 p,li{
     padding-top: 30px; 
@@ -110,6 +117,9 @@ p,li{
     
 
 }
+.h3 {
+    padding-top: 20px;
+}
 p.gifLabel {
     padding-top: 20%;
 }
@@ -122,6 +132,7 @@ p.gifLabel {
 }
 #profilePic > img{
     transition: transform 5s;
+    border-radius: 100%;
 }
 #profilePic > img:hover{
     transform: scale(1.15);
