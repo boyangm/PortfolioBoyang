@@ -93,7 +93,7 @@ width: 100%;
     background-color: darkgrey;
     background-attachment: fixed;
     background-blend-mode: multiply;
-    /* height: 100vh; */
+    height: 100vh;
     width: 100%;
 }
 li{
@@ -241,4 +241,22 @@ padding-bottom: 40px !important;
 	height: auto;
       opacity: 1;
       transform: translateX(0%);
+}
+
+.hoverImg{
+    position: relative;
+    width:100%;
+    height: 200px;
+    background:rgba(128,128,128, 0.6);
+    z-index: 2;
+    top: -200px;
+    transition: transform 500ms linear;
+
+}
+.border{
+    overflow: hidden;
+}
+.border:hover .hoverImg {
+
+    transform: translateY(100%);
 }
