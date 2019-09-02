@@ -219,7 +219,7 @@ ul >label:last-child {
 padding-bottom: 40px !important;
 
 }
-#resume {
+#resume, #projects {
     position: relative;
    
     transition: color 500ms ease-in;
@@ -257,15 +257,20 @@ padding-bottom: 40px !important;
 }
 .border{
     overflow: hidden;
-
 }
 .border:hover .hoverImg {
-
     transform: translateY(0);
+    cursor: pointer;
 }
 #resume:hover {
     color: yellow;
     animation: movie 2s ease-in infinite;
+    cursor: pointer;
+}
+#projects:hover {
+    color: rgb(147, 45, 231);
+    animation: movie 2s ease-in infinite;
+    cursor: pointer;
 }
 .scene{
     border-bottom: solid black 40px;

@@ -111,7 +111,7 @@ window.onload = function() {
    
   function updatePosition() {
    const pos = getPosition(hit);
-    if(pos.y >350 && ul.classList.contains('is-visible')){
+    if(pos.y >350){
         hide(toggleContent);
 
         console.log('hit');
