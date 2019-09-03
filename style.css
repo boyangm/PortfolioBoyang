@@ -359,6 +359,7 @@ padding-bottom: 40px !important;
     
     .section1,.section2,.section3{
         margin-left: 0;
+        position: relative;
         width:100%;
         background-size:cover;
     }
