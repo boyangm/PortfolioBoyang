@@ -1,8 +1,33 @@
+// var firebaseConfig = {
+//   apiKey: "AIzaSyDs4yPFtNgnipejYVxJysuBzLpvE52hURI",
+//   authDomain: "boyang-portfolio.firebaseapp.com",
+//   databaseURL: "https://boyang-portfolio.firebaseio.com",
+//   projectId: "boyang-portfolio",
+//   storageBucket: "",
+//   messagingSenderId: "48042902051",
+//   appId: "1:48042902051:web:5a48b1f4fd7a44e1"
+// };
+
+// var database = firebase.database();
+// // Initialize Firebase
+// firebase.initializeApp(firebaseConfig);
 const section1 = document.querySelector('.section1');
 const hit = document.querySelector('#hit');
 const toggleContent = document.querySelector('.toggle-content');
-const ul = document.getElementsByTagName('ul')
-console.log('loaded');
+const ul = document.getElementsByTagName('ul');
+const submit = document.querySelector('#submit');
+console.log('Thanks for checking out my Site!');
+
+// captures information from firebase
+
+// function writeUserData(userId, name, email, message) {
+//   firebase.database().ref('users/' + userId).set({
+//     username: name,
+//     email: email,
+//     message : message
+//   });
+// }
+
 var show = function (elem) {
     // Get the natural height of the element
 	var getHeight = function () {
@@ -42,39 +67,6 @@ var hide = function (elem) {
 	}, 350);
 
 };
-
-// Toggle element visibility
-// var toggle = function (elem, timing) {
-
-// 	// If the element is visible, hide it
-// 	if (elem.classList.contains('is-visible')) {
-// 		hide(elem);
-// 		return;
-// 	}
-
-// 	// Otherwise, show it
-// 	show(elem);
-	
-// };
-
-// // Listen for click events
-// document.addEventListener('click', function (event) {
-
-// 	// Make sure clicked element is our toggle
-// 	if (!event.target.classList.contains('toggle')) return;
-    
-// 	// Prevent default link behavior
-// 	event.preventDefault();
-    
-// 	// Get the content
-// 	var content = document.querySelector(event.target.hash);
-// 	if (!content) return;
-    
-// 	// Toggle the content
-// 	toggle(content);
-    
-// }, false);
-
 function getPosition(el) {
     var xPos = 0;
     var yPos = 0;
@@ -95,7 +87,6 @@ function getPosition(el) {
    
       el = el.offsetParent;
     }
-    console.log( xPos, yPos)
     return {
       x: xPos,
       y: yPos
@@ -109,15 +100,17 @@ window.onload = function() {
   window.addEventListener("scroll", updatePosition, false);
   window.addEventListener("resize", updatePosition, false);
    
+  //continuously returns the positon of the element to trigger Scroll Event
   function updatePosition() {
    const pos = getPosition(hit);
     if(pos.y >350){
         hide(toggleContent);
 
-        console.log('hit');
+        // console.log('hit');
     }else{
         show(toggleContent);
     }
 
   }
-};
+}
+  
