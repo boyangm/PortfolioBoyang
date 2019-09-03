@@ -3,15 +3,28 @@
 }
 body {
     width: 100%;
+    
     padding: 0;
     margin: 0;
     font-size: 14px;
 }
 .mainContent {
     width: 80%;
+   
+    position: relative;
     display: flex;
     flex-flow: column;
    
+}
+.submit{
+    background: red;
+    color:white;
+    font-family: 'Lexend Deca', sans-serif;
+    border: black;
+    width: 200px; 
+    margin: auto; 
+    margin-top: 20px;
+    transition: color 250ms linear;
 }
 
 .projectLink{
@@ -39,13 +52,7 @@ body {
 .label {
     padding: 15px 0;
 }
-.container {
-position: relative; 
-display: flex;
-flex-flow: row;
-width: 100%;
 
-}
 .section1 ul {
     padding-left: 0px;
 }
@@ -64,6 +71,7 @@ width: 100%;
 }
 .section2{
     margin: 0 auto ;
+    position: relative;
     text-align: center;
     margin-left: 25%;
     background: url('14859653_10106991516376950_7941681143605862699_o.jpg') no-repeat center;
@@ -71,12 +79,13 @@ width: 100%;
     background-color: darkgrey;
     background-attachment: fixed;
     background-blend-mode: multiply;
-    height: 100vh;
+   
     width: 100%; 
 }
 .section3{
     margin: 0 auto ;
     text-align: center;
+    position: relative;
     margin-left: 25%;
     background: url('14882264_10106991517649400_8387405017800295807_o.jpg') no-repeat center;
     background-size: cover;
@@ -92,6 +101,7 @@ width: 100%;
     margin-left: 25%;
     text-align: center;
     background: url('IMG_8086.jpg') no-repeat center;
+    position: relative;
     background-size: cover;
     background-color: darkgrey;
     background-attachment: fixed;
@@ -123,7 +133,7 @@ p,li{
     display: flex;
     flex-flow: column;
     width: 20%;
-    height: 1000px;
+    height: 100vh;
     
 
 }
@@ -143,6 +153,7 @@ p.gifLabel {
 }
 #profilePic > img{
     transition: transform 5s;
+    width: 100%;
     border-radius: 100%;
 }
 #profilePic > img:hover{
@@ -150,6 +161,7 @@ p.gifLabel {
 }
 .mainLinks{
     display: flex;
+    position: relative;
     flex-flow: column;
     font-family: 'Poiret One', cursive;
 }
@@ -158,6 +170,12 @@ p.gifLabel {
     padding-top: 10px;
     line-height: 1.5em;
     color: white;
+}
+.social{
+    padding-top:10px; 
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
 }
 .mainLinks > a:hover {
     color: black;
@@ -224,7 +242,8 @@ padding-bottom: 40px !important;
 }
 #resume, #projects {
     position: relative;
-   
+    color: white;
+    text-decoration: none;
     transition: color 500ms ease-in;
 }
 @keyframes movie {
@@ -275,8 +294,100 @@ padding-bottom: 40px !important;
     animation: movie 2s ease-in infinite;
     cursor: pointer;
 }
+#name,
+#email,
+#message{
+    width: 400px; 
+    margin: auto;
+}
 .scene{
     border-bottom: solid black 40px;
 }
 
- 
+@media only screen and (max-width: 768px) {
+    title {
+      font-size: 3.5rem;
+    }
+
+    #profilePic{
+        display: none;
+    }
+    .contentArea{
+        display: flex;
+        flex-flow: column;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .sidebar {
+       
+        background-color: red;
+        position:fixed;
+        display: flex;
+        flex-flow: row;
+        height: auto;
+        width: 100%;
+        z-index: 2;
+          
+    
+    }
+    .mainContent{
+        width: 100%;
+        margin: 0;
+        padding:0;
+        align-items: center;
+        
+    }
+    .social{
+        width: 30%;
+    }
+
+    .mainLinks{
+        flex-flow: row;
+        position: relative;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    .mainLinks >a{
+        width: 15%;
+    }
+    .mainLinks>a :last-child{
+        margin-right: 0;
+        border-right: solid black 2px;
+    }
+    
+    .section1,.section2,.section3{
+        margin-left: 0;
+        width:100%;
+    }
+    .section3{
+        height: auto;
+        padding-bottom: 150px;
+    }
+    img{
+        width: 100px;
+    }
+    #name,
+    #email,
+    #message{
+        width: 60%;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+    #profilePic{
+        width: 80%;
+        margin: 20px auto 0;
+        
+    }
+    #profilePic > img{
+        width: 100%;
+    }
+    .social{
+        width: 80%;
+    }
+    
+  }
