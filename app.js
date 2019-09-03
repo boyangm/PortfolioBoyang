@@ -103,7 +103,7 @@ window.onload = function() {
   //continuously returns the positon of the element to trigger Scroll Event
   function updatePosition() {
    const pos = getPosition(hit);
-    if(pos.y >350){
+    if(pos.y >450){
         hide(toggleContent);
 
         // console.log('hit');
