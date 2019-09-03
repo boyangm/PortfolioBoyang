@@ -10,13 +10,12 @@ body {
 }
 .mainContent {
     width: 80%;
-   
     position: relative;
     display: flex;
     flex-flow: column;
    
 }
-.submit{
+#submit{
     background: red;
     color:white;
     font-family: 'Lexend Deca', sans-serif;
@@ -24,7 +23,6 @@ body {
     width: 200px; 
     margin: auto; 
     margin-top: 20px;
-    transition: color 250ms linear;
 }
 
 .projectLink{
@@ -56,11 +54,11 @@ body {
 .section1 ul {
     padding-left: 0px;
 }
-.photoDiv {
+/* .photoDiv {
     position: relative;
     width: 90%;
     margin:  auto;
-}
+} */
 
 .contentArea {
     position: relative;
@@ -79,7 +77,6 @@ body {
     background-color: darkgrey;
     background-attachment: fixed;
     background-blend-mode: multiply;
-   
     width: 100%; 
 }
 .section3{
@@ -151,13 +148,13 @@ p.gifLabel {
     margin-left: 15%;
     overflow: hidden;
 }
-#profilePic > img{
-    transition: transform 5s;
+#boyang {
     width: 100%;
     border-radius: 100%;
+    transition: transform 3s linear;
 }
-#profilePic > img:hover{
-    transform: scale(1.15);
+#boyang:hover{
+    transform: scale(2.15);
 }
 .mainLinks{
     display: flex;
