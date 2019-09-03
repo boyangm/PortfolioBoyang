@@ -183,6 +183,9 @@ p.gifLabel {
    
 
 }
+.social > a:hover .svg{
+   fill: black;
+}
 .project1 {
     width: 50%;
     background: url('https://media1.giphy.com/media/pVe8bu4l12iT6/source.gif') no-repeat center;
@@ -357,10 +360,12 @@ padding-bottom: 40px !important;
     .section1,.section2,.section3{
         margin-left: 0;
         width:100%;
+        background-size:cover;
     }
     .section3{
         height: auto;
         padding-bottom: 150px;
+        background-size:cover;
     }
     img{
         width: 100px;
