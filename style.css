@@ -79,11 +79,8 @@ body {
     position: relative;
     text-align: center;
     margin-left: 25%;
-    /* background: url('14859653_10106991516376950_7941681143605862699_o.jpg') no-repeat center; */
     background-size: cover;
-    /* background-color: darkgrey;
-    background-attachment: fixed;
-    background-blend-mode: multiply; */
+ 
     width: 100%; 
 }
 .section3{
@@ -91,11 +88,9 @@ body {
     text-align: center;
     position: relative;
     margin-left: 25%;
-    /* background: url('14882264_10106991517649400_8387405017800295807_o.jpg') no-repeat center; */
     background-size: cover;
-    /* background-color: darkgrey;
-    background-attachment: fixed; */
-    /* background-blend-mode: multiply; */
+    background-attachment: fixed;
+   
     height: 100vh;
     width: 100%; 
     
@@ -104,18 +99,16 @@ body {
     min-height: 400px;
     background: transparent;
     border-bottom: 40px solid black;
+    
 }
 .section1{
     margin: 0 auto ;
     margin-left: 25%;
     text-align: center;
-    /* background: url('IMG_8086.jpg') no-repeat center; */
+
     position: relative;
     background-size: cover;
-    /* background-color: darkgrey; */
-    /* background-attachment: fixed; */
-    /* background-blend-mode: multiply; */
-    /* height: 100vh; */
+ 
     width: 100%;
 }
 li{
@@ -240,10 +233,11 @@ ul >label:last-child {
 padding-bottom: 40px !important;
 
 }
+
 .resume, #projects {
     position: relative;
     color: white;
-    text-decoration: none;
+    text-decoration: none !important;
     transition: color 500ms ease-in;
 }
 @keyframes movie {
