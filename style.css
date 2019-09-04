@@ -40,7 +40,7 @@ body {
 .projectLink{
     text-decoration: none !important;
 }
-.title{
+#title{
     margin-top: 10% !important;
     font-size: 5.5rem;
     background: -webkit-linear-gradient(#eee, #333);
