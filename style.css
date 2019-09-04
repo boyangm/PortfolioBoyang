@@ -40,7 +40,7 @@ body {
 .projectLink{
     text-decoration: none !important;
 }
-#title{
+.title{
     margin-top: 10% !important;
     font-size: 5.5rem;
     background: -webkit-linear-gradient(#eee, #333);
@@ -52,7 +52,7 @@ body {
     color: white;
 }
 
-#subHeader{
+.subHeader{
     color: white;
     padding-bottom: 20px;
     background: -webkit-linear-gradient(#eee, #333);
@@ -233,7 +233,11 @@ ul >label:last-child {
 padding-bottom: 40px !important;
 
 }
-
+.greetings{
+    background: url('14882264_10106991517649400_8387405017800295807_o.jpg') center no-repeat;
+    background-size: cover;
+    min-height: 100vh
+}
 .resume, #projects {
     position: relative;
     color: white;

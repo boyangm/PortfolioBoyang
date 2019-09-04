@@ -18,6 +18,10 @@ app.use(express.static(__dirname));
 app.get('/', function(req, res){
    res.render('index');
 });
+app.get('/thanks', function(req, res){
+   res.render('thanks');
+});
+
 app.post('/home', (req,res) =>{
    res.redirect('/');
 })
@@ -36,12 +40,12 @@ app.post('/send', function(req, res){
    console.log(req.body.message);
    var source = req.body.name;
    sgMail.send({
-    to: 'DESTINATION_EMAIL',
+    to: 'boyangbass@gmail.com',
     from: req.body.email,
     subject: source + ' is awaiting your reply!',
     text: req.body.message
 })
-   res.render('thanks');
+   res.redirect('/thanks');
 });
 
 
