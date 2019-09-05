@@ -329,6 +329,7 @@ padding-bottom: 40px !important;
         height: auto;
         width: 100%;
         z-index: 2;
+        font-size: 0.8rem;
           
     
     }
@@ -340,19 +341,26 @@ padding-bottom: 40px !important;
         
     }
     .social{
-        width: 30%;
+        width: 40%;
+    }
+    .social > a {
+        margin-right: 5px;
     }
 
     .mainLinks{
         flex-flow: row;
         position: relative;
-        width: 85%;
-        justify-content: space-between;
+        width: 100%;
+        justify-content: space-evenly;
         align-items: center;
+        margin-left: 0;
+        padding-left: 0;
+        
         
     }
     .mainLinks >a{
-        width: 15%;
+        width: 33%;
+        margin-left: 0;
     }
     .mainLinks>a :last-child{
         margin-right: 0;
