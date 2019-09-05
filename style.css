@@ -306,7 +306,7 @@ padding-bottom: 40px !important;
 
 @media only screen and (max-width: 768px) {
     title {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
     }
 
     #profilePic{
@@ -329,7 +329,7 @@ padding-bottom: 40px !important;
         height: auto;
         width: 100%;
         z-index: 2;
-        font-size: 0.8rem;
+        font-size: 1rem;
           
     
     }
@@ -362,10 +362,7 @@ padding-bottom: 40px !important;
         width: 33%;
         margin-left: 0;
     }
-    .mainLinks>a :last-child{
-        margin-right: 0;
-        border-right: solid black 2px;
-    }
+  
     
     .section1,.section2,.section3{
         margin-left: 0;
