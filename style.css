@@ -156,6 +156,8 @@ p.gifLabel {
 .mainLinks{
     display: flex;
     position: relative;
+    padding-left: 0;
+    text-align: center;
     flex-flow: column;
     font-family: 'Poiret One', cursive;
 }
@@ -167,9 +169,10 @@ p.gifLabel {
 }
 .social{
     padding-top:10px; 
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
+    padding: 10px 10%;
 }
 .mainLinks > a:hover {
     color: black;
@@ -396,6 +399,7 @@ padding-bottom: 40px !important;
     }
     .social{
         justify-content: space-between;
+        
     }
     
   }
