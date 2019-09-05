@@ -236,7 +236,8 @@ padding-bottom: 40px !important;
 .greetings{
     background: url('14882264_10106991517649400_8387405017800295807_o.jpg') center no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100vh !important;
+
 }
 .resume, #projects {
     position: relative;
