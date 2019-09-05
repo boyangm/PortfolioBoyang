@@ -12,10 +12,12 @@
 // // Initialize Firebase
 // firebase.initializeApp(firebaseConfig);
 const section1 = document.querySelector('.section1');
+const parallax = document.getElementsByClassName('parallax');
 const hit = document.querySelector('#hit');
 const toggleContent = document.querySelector('.toggle-content');
 const ul = document.getElementsByTagName('ul');
 const submit = document.querySelector('#submit');
+var x = window.matchMedia("(max-width: 768px)");
 console.log('Thanks for checking out my Site!');
 
 // captures information from firebase
@@ -92,7 +94,22 @@ function getPosition(el) {
       y: yPos
     };
   }
-   
+  function myFunction(x) {
+    if (x.matches) { // If media query matches
+      for (let i =0 ; i<3 ; i++){
+        parallax[i].setAttribute('data-image-src','memphis-mini-dark.png');
+
+      }
+      console.log('yes');
+    } else {
+      console.log('no');
+    }
+  }
+  
+ 
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction) // Attach listener function on state changes
+ 
 window.onload = function() {
     hide(toggleContent);
     // Helper function to get an element's exact position
