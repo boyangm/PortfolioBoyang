@@ -1,16 +1,4 @@
-// var firebaseConfig = {
-//   apiKey: "AIzaSyDs4yPFtNgnipejYVxJysuBzLpvE52hURI",
-//   authDomain: "boyang-portfolio.firebaseapp.com",
-//   databaseURL: "https://boyang-portfolio.firebaseio.com",
-//   projectId: "boyang-portfolio",
-//   storageBucket: "",
-//   messagingSenderId: "48042902051",
-//   appId: "1:48042902051:web:5a48b1f4fd7a44e1"
-// };
 
-// var database = firebase.database();
-// // Initialize Firebase
-// firebase.initializeApp(firebaseConfig);
 const section1 = document.querySelector('.section1');
 const parallax = document.getElementsByClassName('parallax');
 const hit = document.querySelector('#hit');
@@ -20,15 +8,6 @@ const submit = document.querySelector('#submit');
 var x = window.matchMedia("(max-width: 768px)");
 console.log('Thanks for checking out my Site!');
 
-// captures information from firebase
-
-// function writeUserData(userId, name, email, message) {
-//   firebase.database().ref('users/' + userId).set({
-//     username: name,
-//     email: email,
-//     message : message
-//   });
-// }
 
 var show = function (elem) {
     // Get the natural height of the element
