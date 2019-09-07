@@ -147,7 +147,7 @@ p.gifLabel {
 }
 #boyang {
     width: 100%;
-    border-radius: 100%;
+    border-radius: 100% !important;
     transition: transform 5s linear;
 }
 #boyang:hover{
@@ -238,7 +238,7 @@ padding-bottom: 40px !important;
 
 }
 .greetings{
-    background: url('14882264_10106991517649400_8387405017800295807_o.jpg') center no-repeat;
+    background: url('background3.jpg') center no-repeat;
     background-size: cover;
     height: 100vh !important;
 
